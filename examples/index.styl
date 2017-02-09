@@ -1,0 +1,40 @@
+.example-container {
+    strong {
+        display: block;
+        margin: 16px 0 8px 0;
+    }
+}
+
+.table-container {
+    position: relative;
+
+    > table {
+        width: 100%;
+        max-width: 100%;
+        table-layout: fixed;
+        broder: 1px solid #ddd;
+
+        > thead > tr {
+            > th {
+                color: #777;
+                font-weight: bold;
+                border: 1px solid #ddd;
+            }
+        }
+
+        > thead > tr > th,
+        > tbody > tr > td {
+            padding: 8px 12px;
+            vertical-align: top;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: #eee;
+            border-bottom-width: 2px;
+            border-bottom-color: #ccc;
+        }
+    }
+}
+
+.table-loader {
+    top: 83px;
+}

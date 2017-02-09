@@ -1,0 +1,18 @@
+{
+  "name": "@trendmicro/react-loader",
+  "description": "Trend Micro Components: React Loader",
+  "authors": [
+    {
+      "name": "",
+      "email": "",
+      "homepage": "https://github.com/trendmicro-frontend"
+    }
+  ],
+  "homepage": "https://github.com/trendmicro-frontend/react-loader",
+  "snapshots": [],
+  "keywords": [
+    "react",
+    "react-loader"
+  ],
+  "license": "MIT"
+}
