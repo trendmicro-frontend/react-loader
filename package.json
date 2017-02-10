@@ -25,12 +25,12 @@
     "type": "git",
     "url": "git+https://github.com/trendmicro-frontend/react-loader.git"
   },
-  "author": "",
+  "author": "Tina C Lin <tina_c_lin@trend.com.tw>",
   "contributors": [
     {
-      "name": "",
-      "email": "",
-      "url": "https://github.com/trendmicro-frontend"
+      "name": "Tina C Lin",
+      "email": "tina_c_lin@trend.com.tw",
+      "url": "https://github.com/tinaClin"
     }
   ],
   "license": "MIT",
