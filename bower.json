@@ -2,11 +2,7 @@
   "name": "@trendmicro/react-loader",
   "description": "Trend Micro Components: React Loader",
   "authors": [
-    {
-      "name": "",
-      "email": "",
-      "homepage": "https://github.com/trendmicro-frontend"
-    }
+    "Tina C Lin <tina_c_lin@trend.com.tw>"
   ],
   "homepage": "https://github.com/trendmicro-frontend/react-loader",
   "snapshots": [],
