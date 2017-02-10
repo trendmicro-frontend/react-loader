@@ -39,6 +39,7 @@ export default class extends Component {
             <div
                 className={classNames(
                     className,
+                    styles['loader-container'],
                     { [styles['loader-overlay']]: overlay }
                 )}
             >

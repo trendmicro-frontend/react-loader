@@ -46,7 +46,7 @@
     "react": "^0.14.0 || ^15.0.0"
   },
   "dependencies": {
-    "@trendmicro/react-buttons": "^0.4.6",
+    "@trendmicro/react-buttons": "^0.4.7",
     "classnames": "^2.2.5",
     "react-addons-shallow-compare": "^0.14.0 || ^15.0.0"
   },

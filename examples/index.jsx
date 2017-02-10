@@ -36,11 +36,11 @@ class App extends React.Component {
             <div className="container-fluid">
                 <strong>Loader with button</strong>
                 <Button disabled>
-                    <Loader size="small" />
+                    <Loader className={styles.loader} size="small" />
                     Uploading
                 </Button>
                 <Button btnStyle="primary" disabled>
-                    <Loader size="small" />
+                    <Loader className={styles.loader} size="small" />
                     Uploading
                 </Button>
             </div>
