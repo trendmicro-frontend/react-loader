@@ -34,13 +34,32 @@ module.exports = {
                 test: /\.styl$/,
                 use: [
                     'style-loader',
-                    'css-loader?camelCase&modules&importLoaders=1&localIdentName=[hash:base64:5]',
+                    'css-loader?camelCase&modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]',
                     'stylus-loader'
                 ]
             },
             {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader'
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 8192
+                }
+            },
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 10000,
+                    mimetype: 'application/font-woff'
+                }
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader'
             }
         ]
     },
@@ -48,6 +67,8 @@ module.exports = {
         new webpack.LoaderOptionsPlugin({
             debug: true
         }),
+        new webpack.NamedModulesPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
         new stylusLoader.OptionsPlugin({
             default: {
                 // nib - CSS3 extensions for Stylus
@@ -67,11 +88,11 @@ module.exports = {
     // https://webpack.github.io/docs/webpack-dev-server.html#additional-configuration-options
     devServer: {
         noInfo: false,
-        quite: false,
         lazy: false,
         // https://webpack.github.io/docs/node.js-api.html#compiler
         watchOptions: {
-            poll: true // use polling instead of native watchers
+            poll: true, // use polling instead of native watchers
+            ignored: /node_modules/
         }
     }
 };
