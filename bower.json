@@ -2,10 +2,18 @@
   "name": "@trendmicro/react-loader",
   "description": "Trend Micro Components: React Loader",
   "authors": [
-    "Tina C Lin <tina_c_lin@trend.com.tw>"
+    {
+      "name": "Tina C Lin",
+      "email": "tina_c_lin@trend.com.tw",
+      "homepage": "https://github.com/tinaClin"
+    }
   ],
+  "theme": "minimalism",
   "homepage": "https://github.com/trendmicro-frontend/react-loader",
-  "snapshots": [],
+  "snapshots": [
+    "loaders.png",
+    "example.png"
+  ],
   "keywords": [
     "react",
     "react-loader"
