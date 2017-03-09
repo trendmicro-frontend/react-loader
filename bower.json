@@ -11,8 +11,8 @@
   "theme": "minimalism",
   "homepage": "https://github.com/trendmicro-frontend/react-loader",
   "snapshots": [
-    "loaders.png",
-    "example.png"
+    "./snapshots/loaders.png",
+    "./snapshots/example.png"
   ],
   "keywords": [
     "loader",
