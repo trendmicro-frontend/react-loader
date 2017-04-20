@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
+import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 import styles from './index.styl';
 
-export default class extends Component {
+class Loader extends PureComponent {
     static propTypes = {
         size: PropTypes.oneOf([
             'lg',
@@ -26,9 +25,6 @@ export default class extends Component {
     actions = {
     };
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return shallowCompare(this, nextProps, nextState);
-    }
     render() {
         const {
             size,
@@ -57,3 +53,5 @@ export default class extends Component {
         );
     }
 }
+
+export default Loader;
