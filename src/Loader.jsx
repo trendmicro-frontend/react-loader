@@ -20,28 +20,24 @@ class Loader extends PureComponent {
         overlay: false
     };
 
-    state = {
-    };
-    actions = {
-    };
-
     render() {
         const {
             size,
             overlay,
             className,
-            ...others
+            ...props
         } = this.props;
+
         return (
             <div
+                {...props}
                 className={classNames(
                     className,
-                    styles['loader-container'],
-                    { [styles['loader-overlay']]: overlay }
+                    styles.loaderContainer,
+                    { [styles.loaderOverlay]: overlay }
                 )}
             >
-                <span
-                    {...others}
+                <i
                     className={classNames(
                         styles.loader,
                         { [styles.large]: size === 'large' || size === 'lg' },

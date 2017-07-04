@@ -21,12 +21,54 @@ class App extends React.Component {
     renderSizes () {
         return (
             <div className="container-fluid">
-                <strong>Small</strong>
-                <Loader size="small" />
-                <strong>Medium (default)</strong>
-                <Loader />
-                <strong>Large</strong>
-                <Loader size="large" />
+                <div>
+                    <strong>Small</strong>
+                    <div style={{ position: 'relative' }}>
+                        <Loader size="small" />
+                        <span
+                            style={{
+                                marginLeft: 10,
+                                position: 'absolute',
+                                top: '50%',
+                                transform: 'translateY(-50%)'
+                            }}
+                        >
+                            Loading...
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <strong>Medium (default)</strong>
+                    <div style={{ position: 'relative' }}>
+                        <Loader />
+                        <span
+                            style={{
+                                marginLeft: 10,
+                                position: 'absolute',
+                                top: '50%',
+                                transform: 'translateY(-50%)'
+                            }}
+                        >
+                            Loading...
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <strong>Large</strong>
+                    <div style={{ position: 'relative' }}>
+                        <Loader size="large" />
+                        <span
+                            style={{
+                                marginLeft: 10,
+                                position: 'absolute',
+                                top: '50%',
+                                transform: 'translateY(-50%)'
+                            }}
+                        >
+                            Loading...
+                        </span>
+                    </div>
+                </div>
             </div>
         );
     }
